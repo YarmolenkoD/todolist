@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+.my-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
+/*HEADER*/
+
+header {
+    background-color: #222;
+}
+
+.header-container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+/*TODOLIST SECTION*/
+
+.todo-container {
+    padding: 40px 0;
+}
+
+.todolist-container {
+    padding: 20px 0;
+}
+
+.todo-item-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.todo-item-wrap:first-child {
+    margin: 0 !important;
+}
+
+.todo-item-wrap.dragging .todo-text {
+    border: 1px solid yellow;
+    background: lightyellow;
+    cursor: pointer;
+}
+
+.todo-item-wrap.dragging .del-btn, .todo-item-wrap.dragging .edit-btn {
+    background: #333333;
+    cursor: pointer;
+}
+
+.todo-text {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #222;
+    background: none;
+    cursor: pointer;
+}
+
+.todo-text.edit {
+    border: 1px solid black;
+    background: lightyellow;
+}
+
+.todo-text.done {
+    background-color: green;
+}
+
+.todo-item-buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edit-btn, .del-btn, .done-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn:hover, .del-btn:hover, .done-btn:hover {
+    background-color: #333333;
+}
+
+.todo-form {
+    display: flex;
+}
+
+.todo-form .text-input {
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    color: #222222;
+    outline: none;
+}
+
+.todo-form .add-btn {
+    display: inline-block;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.todo-form .add-btn:hover {
+    background-color: #333;
+}

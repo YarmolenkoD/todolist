@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <linK href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="my-container">
+        <div class="header-container">
+            <h1>My todolist</h1>
+        </div>
+    </div>
+</header>
+<section class="todolist-section">
+    <div class="my-container">
+        <div class="todo-container">
+            <div class="todo-input-container">
+                <form class="todo-form" id="todo-form" onsubmit="addTodo(event)">
+                    <input type="text" id="inputText" class="text-input">
+                    <button type="submit" id="add" class="add-btn">ADD</button>
+                </form>
+            </div>
+            <div class="todolist-container">
+                <ul class="todolist-wrapper" id="todolist-wrapper">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
